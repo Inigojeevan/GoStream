@@ -1,5 +1,5 @@
 # WEBRTC
 
--> React
+-> Nextjs
 -> Socket.io
 -> go fiber
