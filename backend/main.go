@@ -14,7 +14,7 @@ func main() {
 	http.HandleFunc("/createRoom", server.CreateRoomRequestHandler)
 	http.HandleFunc("/joinRoom", server.JoinRoomRequestHandler)
 
-	log.Println("Server started at port 8080")
+	log.Println("Server started at port 8080")	
 	fmt.Println("")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {

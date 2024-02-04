@@ -1,5 +1,5 @@
 # WEBRTC
 
--> Nextjs
--> websocket
--> go 
+- React \n
+- websocket \n
+- go
