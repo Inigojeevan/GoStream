@@ -1,16 +1,16 @@
-package backend
+package server
 
 import (
 	"math/rand"
 	"sync"
 	"time"
 
-	"golang.org/x/net/websocket"
+	"github.com/gorilla/websocket"
 )
 
 type Participant struct {
 	Host bool
-	conn *websocket.Conn
+	Conn *websocket.Conn
 }
 
 type RoomMap struct{
