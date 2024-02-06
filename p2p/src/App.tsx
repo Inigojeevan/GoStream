@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import CreateRoom from "./components/CreateRoom";
-import Rooms from "./components/Rooms";
+import Room from "./components/Rooms";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<CreateRoom />} />
-          <Route path="/room/:roomID" element={<Rooms />} />
+          <Route path="/" element={<CreateRoom />}></Route>
+          <Route path="/room/:roomID" element={<Room />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

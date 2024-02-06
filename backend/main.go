@@ -5,19 +5,20 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Inigojeevan/WebRTC/server"
+	"github.com/Inigojeevan/WebRTC/backend/server"
 )
 
 func main() {
-	server.AllroomMap.Init()
+	server.AllRooms.Init()
 
-	http.HandleFunc("/createRoom", server.CreateRoomRequestHandler)
-	http.HandleFunc("/joinRoom", server.JoinRoomRequestHandler)
+	http.HandleFunc("/create", server.CreateRoomRequestHandler)
+	http.HandleFunc("/join", server.JoinRoomRequestHandler)
 
-	log.Println("Server started at port 8080")	
-	fmt.Println("")
-	err := http.ListenAndServe(":8080", nil)
+	log.Println("starting Server on  Port 8000")
+	fmt.Println(" ")
+	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+		log.Fatal((err))
 	}
+
 }
