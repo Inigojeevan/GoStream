@@ -27,7 +27,7 @@ To get started with the project, follow these steps:
     ```bash
     cd WEBRTC
     ```
-3. Install all dependencies
+3. Install all required dependencies.
 
 4. Start the server:
 
